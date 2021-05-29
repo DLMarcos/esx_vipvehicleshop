@@ -8,7 +8,7 @@ Locales['es'] = {
   ['no_current_vehicle']      = 'No tiene actualmente un vehículo en pantalla',
   ['no']                      = 'No',
   ['yes']                     = 'Si',
-  ['not_enough_money']        = 'No tienes suficiente dinero',
+  ['not_enough_money']        = 'No eres vip',
   ['shop_menu']               = 'Presiona ~INPUT_CONTEXT~ para visitar el concesionario',
   ['generic_shopitem']        = '$%s',
 }
