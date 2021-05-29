@@ -152,7 +152,7 @@ function OpenShopMenu()
 			elements = {
 				{label = _U('no'),  value = 'no'},
 				{label = _U('yes'), value = 'yes'},
-				{label = ('Prueba Gratuita (2 minutos'), value = 'test'}
+				{label = ('Free trial (2 minutes'), value = 'test'}
 		}}, function(data2, menu2)
 			if data2.current.value == 'yes' then
 					local generatedPlate = GeneratePlate()
@@ -184,10 +184,10 @@ function OpenShopMenu()
 					TaskWarpPedIntoVehicle(playerPed, vehicle, -1)
 					FreezeEntityPosition(playerPed, false)
 					SetEntityVisible(playerPed, true)
-					ESX.ShowNotification("Tiene 10 minutos de prueba, una vez finalizado un trabajador te quitará el vehículo")
+					ESX.ShowNotification("You have a 10-minute trial, once finished a worker will take your vehicle away")
 					Citizen.Wait(Config.TimeToTestVehicle)
 					DeleteVehicle(vehicle)
-					ESX.ShowNotification("Un trabajador del concesionario VIP te ha requisado el vehículo. ¡Esperamos volverte a ver pronto!")
+					ESX.ShowNotification("A VIP dealership worker has seized your vehicle. We hope to see you again soon!")
 				end)
 			end
 		end, function(data2, menu2)
